@@ -8,7 +8,7 @@ import Aunty from './component/Aunty/Aunty';
 function App() {
   return (
     <div className="App">
-      <GrandFather></GrandFather>
+      <GrandFather house="5"></GrandFather>
     </div>
   );
 }

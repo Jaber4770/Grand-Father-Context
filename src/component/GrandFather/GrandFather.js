@@ -3,14 +3,16 @@ import Aunty from '../Aunty/Aunty';
 import Father from '../Father/Father';
 import Uncle from '../Uncle/Uncle';
 
-const GrandFather = () => {
+const GrandFather = (props) => {
+    const {house} = props;
     return (
         <div>
             <h1>GrandFather</h1>
+            <h4>House{house}</h4>
             <div style={{display:'flex'}}>
-                <Father></Father>
-                <Uncle></Uncle>
-                <Aunty></Aunty>
+                <Father house={house}></Father>
+                <Uncle house={house}></Uncle>
+                <Aunty house={house}></Aunty>
             </div>
         </div>
     );
