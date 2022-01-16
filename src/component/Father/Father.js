@@ -5,7 +5,7 @@ import Sister from '../Sister/Sister';
 import './Father.css'
 
 const Father = (props) => {
-    const {house} = props;
+    const { house } = props;
     return (
         <div>
             <h2>Father</h2>
