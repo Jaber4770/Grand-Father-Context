@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Uncle = () => {
+const Brother = () => {
     return (
         <div>
-            <h2>Uncle</h2>
+            <h3>Brother</h3>
         </div>
     );
 };
 
-export default Uncle;
+export default Brother;
