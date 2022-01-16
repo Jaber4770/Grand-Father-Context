@@ -1,14 +1,12 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import GrandFather from './component/GrandFather/GrandFather';
-import Father from './component/Father/Father';
-import Uncle from './component/Uncle/Uncle';
-import Aunty from './component/Aunty/Aunty';
-
 function App() {
+  const [house, setHouse] = useState(1);
   return (
     <div className="App">
-      <GrandFather house="5"></GrandFather>
+      <button onClick={() => setHouse(house + 1)}>Buy a new house</button>
+      <GrandFather house={house}></GrandFather>
     </div>
   );
 }

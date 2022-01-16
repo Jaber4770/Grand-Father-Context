@@ -8,7 +8,7 @@ const GrandFather = (props) => {
     return (
         <div>
             <h1>GrandFather</h1>
-            <h4>House{house}</h4>
+            <h4>House: {house}</h4>
             <div style={{display:'flex'}}>
                 <Father house={house}></Father>
                 <Uncle house={house}></Uncle>
